@@ -1,0 +1,44 @@
+.Menu {
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: #1D3B55;
+}
+
+.Menu ul {
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.Menu li {
+    padding: 1% 0;
+    color: white;
+}
+
+li:not(:first-child):before {
+    content: " | ";
+}
+
+li img{
+    padding-right: 7px;
+}
+
+.Menu li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* border-right: 2px solid white; */
+    padding: 0 15px;
+}
+
+.Menu .Logo {
+    padding-top: 15px;
+    padding-right: 30%;
+}
